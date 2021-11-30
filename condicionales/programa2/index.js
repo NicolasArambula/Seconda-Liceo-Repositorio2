@@ -1,0 +1,1 @@
+masa=Number(prompt("¿Cual es su masa (Kg)?"))
