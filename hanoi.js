@@ -2,7 +2,7 @@ let respuesta=""
 
 function hanoi(discos,origen,final) {
     if (discos==1) {
-        respuesta=respuesta + origen + " -> " + final + "<br>"
+        respuesta=respuesta + origen + " -> " + final + "&nbsp;"+ "&nbsp;"
     } else{
         if (final==3&&origen==1) {
             nuevo_final=2
@@ -23,7 +23,7 @@ function hanoi(discos,origen,final) {
             nuevo_final=3
         }
         hanoi(discos-1,origen,nuevo_final)
-        respuesta= respuesta + origen + " -> " + final + "<br>"
+        respuesta= respuesta + origen + " -> " + final + "&nbsp;"+ "&nbsp;"
         nuevo_origen = nuevo_final
         nuevo_final=final
         hanoi(discos-1, nuevo_origen, nuevo_final)
@@ -47,7 +47,7 @@ if(final==origen)
 }else{
 hanoi(discos,origen,final)
 console.log(respuesta)
-respuesta= "El resultado es" + /n + respuesta
+respuesta= "El resultado es " + respuesta
 }
 let contenedor = document.querySelector("#texto")
 contenedor.innerHTML = respuesta
