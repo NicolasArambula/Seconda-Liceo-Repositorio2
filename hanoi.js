@@ -47,7 +47,7 @@ if(final==origen)
 }else{
 hanoi(discos,origen,final)
 console.log(respuesta)
-respuesta= "El resultado es" + "/n" + respuesta
+respuesta= "El resultado es" + /n + respuesta
 }
 let contenedor = document.querySelector("#texto")
 contenedor.innerHTML = respuesta
