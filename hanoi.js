@@ -31,14 +31,19 @@ function hanoi(discos,origen,final) {
 }
 
 do {
-    discos=Number(prompt("Cuantos discos?"))    
+    discos=Number(prompt("¿Cuantos discos?"))    
 } while (discos>10|| discos<1||isNaN(discos));
 do {
-    origen=Number(prompt("Cual es el orgiend de los discos?"))    
+    origen=Number(prompt("¿Cual es el orgien de los discos? (1, 2 o 3)"))    
 } while (origen!=1 && origen!=2 && origen!=3 || isNaN(origen));
 do {
-    final=Number(prompt("Cual es el destino de los discos?"))    
-} while (final!=1 && final!=2 && final!=3 || isNaN(final)||final==origen);
+    final=Number(prompt("¿Cual es el destino de los discos? (1, 2 o 3)"))    
+} while (final!=1 && final!=2 && final!=3 || isNaN(final));
 
+if(final==origen)
+{
+    console.log("Ya está resuelto")
+}else{
 hanoi(discos,origen,final)
-console.log(respuesta)
+console.log(respuesta)}
+document.getElementById("texto").innerHTML = "La solución es \n" + respuesta
