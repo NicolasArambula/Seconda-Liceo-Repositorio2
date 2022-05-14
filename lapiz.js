@@ -1,0 +1,68 @@
+let canv=document.querySelector("#myCanvas")
+let ctx=canv.getContext("2d")
+ctx.fillStyle= "rgb(231, 233, 205)"
+ctx.strokeStyle="Black"
+ctx.beginPath()
+    ctx.arc(110,60,30,1*Math.PI,2*Math.PI)
+    ctx.moveTo(80,60)
+    ctx.lineTo(140,60)
+    ctx.stroke()
+    ctx.fill()
+ctx.fillStyle="rgb(172, 190, 191 )"
+ctx.beginPath()
+    ctx.rect(80,60,60,40)
+    ctx.moveTo(80,78)
+    ctx.lineTo(140,78)
+    ctx.moveTo(80,82)
+    ctx.lineTo(140,82)
+    ctx.fill()
+    ctx.stroke()
+ctx.beginPath()
+    ctx.rect(80,82,60,178)
+    ctx.moveTo(80,82)
+    ctx.lineTo(140,82)
+    ctx.moveTo(80,82)
+    ctx.lineTo(80,260)
+    ctx.moveTo(140,82)
+    ctx.lineTo(140,260)
+    ctx.stroke()
+ctx.fillStyle="rgb(241, 255, 0)"
+ctx.beginPath()
+    ctx.rect(80,100,60,160)
+    ctx.fill()
+ctx.fillStyle="rgb(241, 255, 110)"
+ctx.beginPath()
+    ctx.arc(102.5,260,7.5,1*Math.PI,2*Math.PI)
+    ctx.fill()
+    ctx.stroke()
+ctx.fillStyle="black"
+ctx.beginPath()
+    ctx.arc(132.5,260,7.5,1*Math.PI,2*Math.PI)
+    ctx.fill()
+    ctx.stroke()
+ ctx.beginPath
+    ctx.moveTo(80,260)
+    ctx.lineTo(110,320)
+    ctx.lineTo(140,260)
+    ctx.fill()
+ctx.fillStyle="rgb(241, 255, 110)"
+ctx.beginPath
+    ctx.moveTo(110,300)
+    ctx.arc(115,300,5,1*Math.PI,2*Math.PI)
+    ctx.arc(105,300,5,0*Math.PI,1*Math.PI)
+ctx.stroke
+ctx.beginPath
+    ctx.moveTo(100,300)
+    ctx.lineTo(120,300)
+    ctx.lineTo(110,320)
+    ctx.closePath()
+    ctx.fill()
+ctx.fillStyle="rgb(241, 255, 0)"
+ctx.beginPath()
+    ctx.arc(87.5,260,7.5,0*Math.PI,1*Math.PI)
+    ctx.fill()
+    ctx.stroke()
+ctx.beginPath()
+    ctx.arc(117.5,260,7.5,0*Math.PI,1*Math.PI)
+    ctx.fill()
+    ctx.stroke()
