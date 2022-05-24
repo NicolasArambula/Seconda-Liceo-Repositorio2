@@ -40,13 +40,13 @@ class Personaje{
     ctx.translate(-this.x,-this.y)
     }
 }
-let Personaje1=new Personaje(100,100,0,50)
+let Personaje1=new Personaje(50,50,0,50)
 Personaje1.dibujarse()
-let Personaje2=new Personaje(200,100,45,75)
+let Personaje2=new Personaje(400,100,45,75)
 Personaje2.dibujarse()
-let Personaje3=new Personaje(100,200,-45,25)
+let Personaje3=new Personaje(50,400,-45,25)
 Personaje3.dibujarse()
-let Personaje4=new Personaje(200,200,180,100)
+let Personaje4=new Personaje(400,400,180,100)
 Personaje4.dibujarse()
 let contenedor = document.querySelector("#texto")
 contenedor.innerHTML = `Utilice la función "Personaje()" en la consola para crear otro personaje`
