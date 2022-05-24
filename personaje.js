@@ -43,10 +43,10 @@ class Personaje{
 let Personaje1=new Personaje(100,100,0,50)
 Personaje1.dibujarse()
 let Personaje2=new Personaje(200,100,45,75)
-Personaje1.dibujarse()
+Personaje2.dibujarse()
 let Personaje3=new Personaje(100,200,-45,25)
-Personaje1.dibujarse()
+Personaje3.dibujarse()
 let Personaje4=new Personaje(200,200,180,100)
-Personaje1.dibujarse()
+Personaje4.dibujarse()
 let contenedor = document.querySelector("#texto")
 contenedor.innerHTML = `Utilice la función "Personaje()" en la consola para crear otro personaje`
