@@ -40,19 +40,13 @@ class Personaje{
     ctx.translate(-this.x,-this.y)
     }
 }
-do {
-    x=Number(prompt("Posición en x"))
-} while (isNaN(x));
-do {
-    y=Number(prompt("Posición en y"))
-} while (isNaN(y));
-do {
-    a=Number(prompt("Ángulo"))
-} while (isNaN(a));
-do {
-    r=Number(prompt("radio"))
-} while (isNaN(r)||r<0||r>300);
-let Personaje1=new Personaje(x,y,a,r)
+let Personaje1=new Personaje(100,100,0,50)
+Personaje1.dibujarse()
+let Personaje2=new Personaje(200,100,45,75)
+Personaje1.dibujarse()
+let Personaje3=new Personaje(100,200,-45,25)
+Personaje1.dibujarse()
+let Personaje4=new Personaje(200,200,180,100)
 Personaje1.dibujarse()
 let contenedor = document.querySelector("#texto")
 contenedor.innerHTML = `Utilice la función "Personaje()" en la consola para crear otro personaje`
