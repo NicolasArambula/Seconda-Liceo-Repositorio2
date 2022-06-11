@@ -58,6 +58,7 @@ if(i==1){
 }else{
     i=1
     d=2
+ }
 ctx.translate(-this.x,-this.y)
     }
 }
