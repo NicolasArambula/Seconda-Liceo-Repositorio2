@@ -6,7 +6,7 @@ function borrar1() {
         ctx.fillStyle="black"
 }
 
-let i=2
+let i=1
 let d=2
 let desplazamientoX=0
 let desplazamientoY=0
@@ -52,6 +52,12 @@ ctx.beginPath(); // Pie der
 ctx.moveTo(startx, starty+50);
 ctx.lineTo(startx+(d*7.5), starty+75);
 ctx.stroke();
+if(i==1){
+    i=2
+    d=1
+}else{
+    i=1
+    d=2
 ctx.translate(-this.x,-this.y)
     }
 }
