@@ -81,8 +81,8 @@ document.addEventListener("keydown",function(flecha){
     else if(flecha.keyCode == 39) {
         borrar1();
         desplazamientoX=desplazamientoX+5
-        if (desplazamientoX>800) {
-            desplazamientoX=800
+        if (desplazamientoX>600) {
+            desplazamientoX=600
         }
         Personaje1=new Personaje(50+desplazamientoX,50+desplazamientoY)
         Personaje1.dibujarse()
@@ -99,8 +99,8 @@ document.addEventListener("keydown",function(flecha){
     else if(flecha.keyCode == 40) {
         borrar1();
         desplazamientoY=desplazamientoY+5
-        if (desplazamientoY>300) {
-            desplazamientoY=300
+        if (desplazamientoY>200) {
+            desplazamientoY=200
         }
         Personaje1=new Personaje(50+desplazamientoX,50+desplazamientoY)
         Personaje1.dibujarse()
