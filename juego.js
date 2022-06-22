@@ -122,7 +122,7 @@ document.addEventListener("keydown",function(flecha){
 
 class Obstaculo{
     constructor(){
-        this.X=Math.random()*1000+30
+        this.X=Math.random()*800+30
         this.Y=Math.random()*300+50
     }
     dibujarse(){
