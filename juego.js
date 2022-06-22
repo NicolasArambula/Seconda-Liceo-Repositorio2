@@ -122,8 +122,8 @@ document.addEventListener("keydown",function(flecha){
 
 class Obstaculo{
     constructor(){
-        this.X=Math.random()*1200+30
-        this.Y=Math.random()*400+50
+        this.X=Math.random()*1000+30
+        this.Y=Math.random()*300+50
     }
     dibujarse(){
 ctx.strokeStyle="black"
